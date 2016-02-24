@@ -23,6 +23,7 @@ namespace GuessingGame
         //list of guesses
         public static List<int> guesses = new List<int>();
 
+        //# of things in the list
         public GuessingGame()
         {
             InitializeComponent();
@@ -40,17 +41,14 @@ namespace GuessingGame
             if (guess < rand)
             {
                 outputLabel.Text = "Too Low!";
-                guessnum++;
             }
             else if (guess > rand)
             {
                 outputLabel.Text = "Too High!";
-                guessnum++;
             }
             else
             {
                 outputLabel.Text = "You Got it!";
-                guessnum++;
 
                 //show you got it label for 2 seconds
                 Refresh();

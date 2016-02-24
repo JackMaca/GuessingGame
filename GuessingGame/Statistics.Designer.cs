@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.sortLabel = new System.Windows.Forms.Label();
+            this.ogLabel = new System.Windows.Forms.Label();
             this.sortOrder = new System.Windows.Forms.Label();
             this.ogOrder = new System.Windows.Forms.Label();
             this.guessnumLabel = new System.Windows.Forms.Label();
             this.resultsLabel = new System.Windows.Forms.Label();
             this.victoryLabel = new System.Windows.Forms.Label();
-            this.ogLabel = new System.Windows.Forms.Label();
-            this.sortLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,15 +54,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Results";
             // 
+            // sortLabel
+            // 
+            this.sortLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortLabel.Location = new System.Drawing.Point(10, 124);
+            this.sortLabel.Name = "sortLabel";
+            this.sortLabel.Size = new System.Drawing.Size(101, 20);
+            this.sortLabel.TabIndex = 5;
+            this.sortLabel.Text = "Sorted Order";
+            // 
+            // ogLabel
+            // 
+            this.ogLabel.AutoSize = true;
+            this.ogLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ogLabel.Location = new System.Drawing.Point(10, 71);
+            this.ogLabel.Name = "ogLabel";
+            this.ogLabel.Size = new System.Drawing.Size(106, 20);
+            this.ogLabel.TabIndex = 4;
+            this.ogLabel.Text = "Original Order";
+            // 
             // sortOrder
             // 
             this.sortOrder.AutoSize = true;
             this.sortOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortOrder.Location = new System.Drawing.Point(10, 144);
             this.sortOrder.Name = "sortOrder";
-            this.sortOrder.Size = new System.Drawing.Size(13, 20);
+            this.sortOrder.Size = new System.Drawing.Size(0, 20);
             this.sortOrder.TabIndex = 3;
-            this.sortOrder.Text = ".";
             // 
             // ogOrder
             // 
@@ -70,9 +88,8 @@
             this.ogOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ogOrder.Location = new System.Drawing.Point(10, 91);
             this.ogOrder.Name = "ogOrder";
-            this.ogOrder.Size = new System.Drawing.Size(13, 20);
+            this.ogOrder.Size = new System.Drawing.Size(0, 20);
             this.ogOrder.TabIndex = 2;
-            this.ogOrder.Text = ".";
             // 
             // guessnumLabel
             // 
@@ -103,26 +120,6 @@
             this.victoryLabel.Size = new System.Drawing.Size(144, 31);
             this.victoryLabel.TabIndex = 2;
             this.victoryLabel.Text = "You Got It!";
-            // 
-            // ogLabel
-            // 
-            this.ogLabel.AutoSize = true;
-            this.ogLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ogLabel.Location = new System.Drawing.Point(10, 71);
-            this.ogLabel.Name = "ogLabel";
-            this.ogLabel.Size = new System.Drawing.Size(106, 20);
-            this.ogLabel.TabIndex = 4;
-            this.ogLabel.Text = "Original Order";
-            // 
-            // sortLabel
-            // 
-            this.sortLabel.AutoSize = true;
-            this.sortLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sortLabel.Location = new System.Drawing.Point(10, 124);
-            this.sortLabel.Name = "sortLabel";
-            this.sortLabel.Size = new System.Drawing.Size(101, 20);
-            this.sortLabel.TabIndex = 5;
-            this.sortLabel.Text = "Sorted Order";
             // 
             // Statistics
             // 

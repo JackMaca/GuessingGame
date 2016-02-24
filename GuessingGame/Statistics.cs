@@ -15,9 +15,19 @@ namespace GuessingGame
         {
             InitializeComponent();
 
-            guessnumLabel.Text = "Guesses made: " + GuessingGame.guessnum.ToString();
-            ogOrder.Text = guesses;
-            sortOrder.Text = "";
+            //display guesses in original order
+            guessnumLabel.Text = "Guesses made: " + GuessingGame.guesses.Count();
+            for (int i = 0; i < GuessingGame.guesses.Count(); i++)
+            {
+                ogOrder.Text += GuessingGame.guesses[i].ToString() + " ";
+            }
+
+            //sort and display guesses            
+            for (int i = 0; i < GuessingGame.guesses.Count(); i++)
+            {
+                GuessingGame.guesses.Sort();
+                sortOrder.Text += GuessingGame.guesses[i].ToString() + " ";
+            }
         }
     }
 }
